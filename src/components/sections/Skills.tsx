@@ -11,20 +11,17 @@ export const Skills = () => {
     },
     {
       title: "Styling & UI",
-      skills: ["Tailwind CSS", "SCSS", "Material UI", "Framer Motion", "Responsive Design", "Glassmorphism"],
+      skills: ["Tailwind CSS", "SCSS", "Material UI", "Framer Motion", "Responsive Design"],
     },
     {
       title: "State Management & APIs",
-      skills: ["Redux", "Redux Toolkit", "Context API", "REST APIs", "React Query"],
+      skills: ["Redux", "Redux Toolkit", "Context API", "REST APIs"],
     },
     {
       title: "Backend & Database",
       skills: ["Node.js", "Express.js", "MongoDB"],
     },
-    {
-      title: "Tools & DevOps",
-      skills: ["Git", "GitHub", "AWS", "Jira", "VS Code", "Webpack", "Vite"],
-    },
+
   ];
 
   return (

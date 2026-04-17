@@ -8,13 +8,15 @@ import { useState } from "react";
 export const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    const form = e.currentTarget;
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       alert("Message sent successfully (Simulated)");
+      form.reset();
     }, 1500);
   };
 
@@ -47,32 +49,20 @@ export const Contact = () => {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
-                <Phone size={24} />
-              </div>
-              <div>
-                <h4 className="text-sm text-muted-foreground font-medium mb-1">Phone</h4>
-                <a href="tel:+919974572312" className="text-lg font-medium hover:text-emerald-400 transition-colors">
-                  +91 9974572312
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0">
                 <MapPin size={24} />
               </div>
               <div>
                 <h4 className="text-sm text-muted-foreground font-medium mb-1">Location</h4>
-                <p className="text-lg font-medium">India</p>
+                <p className="text-lg font-medium">Gujarat, India</p>
               </div>
             </div>
           </motion.div>
 
           {/* Contact Form */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
             className="md:col-span-3 glass-panel p-8 rounded-3xl"
@@ -86,7 +76,7 @@ export const Contact = () => {
                     id="name"
                     required
                     className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all text-white"
-                    placeholder="John Doe"
+                    placeholder="Enter name"
                   />
                 </div>
                 <div className="space-y-2">
@@ -96,7 +86,7 @@ export const Contact = () => {
                     id="email"
                     required
                     className="w-full bg-background/50 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all text-white"
-                    placeholder="john@example.com"
+                    placeholder="Enter email"
                   />
                 </div>
               </div>

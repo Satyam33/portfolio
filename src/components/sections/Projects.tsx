@@ -47,7 +47,7 @@ export const Projects = () => {
       description: "A comprehensive Food Catering App featuring a role-based system for Admins, Staff, and Delivery personnel. Includes real-time order tracking and secure payments.",
       tech: ["React.js", "Next.js", "Node.js", "Redux", "Material UI"],
       gradient: "from-orange-500 to-rose-500",
-      stats: "Role-based System | Real-time Tracking",
+      stats: "Food Catering App",
       liveUrl: "https://bitetime.com/",
     },
     {
@@ -56,7 +56,7 @@ export const Projects = () => {
       description: "Vehicle Wash Portal with live machine tracking capabilities, detailed revenue dashboards, and comprehensive analytics & reporting features.",
       tech: ["React.js", "Next.js", "Redux", "Tailwind CSS"],
       gradient: "from-blue-500 to-cyan-500",
-      stats: "Live Tracking | Revenue Dashboards",
+      stats: "Vehicle Wash Portal",
       screenshots: [
         // Placeholder names - you'll replace these by adding actual images to the /public folder
         "/blueverse-admin-1.png", 
@@ -72,7 +72,7 @@ export const Projects = () => {
       description: "Insurance Platform facilitating employee health policy management. Features complex multi-step forms with rich validation and heavily optimized state management.",
       tech: ["React.js", "Redux Toolkit", "Form Validation"],
       gradient: "from-emerald-500 to-teal-500",
-      stats: "Multi-step Forms | Optimized APIs",
+      stats: "Insurance Platform",
       liveUrl: "https://www.loophealth.com/",
     },
     {
@@ -81,7 +81,7 @@ export const Projects = () => {
       description: "Issue tracking portal for IT infrastructure. Custom SLA dashboards built with Chart.js and integrated real-time notifications.",
       tech: ["React.js", "Chart.js", "Real-time Notifications"],
       gradient: "from-purple-500 to-indigo-500",
-      stats: "SLA Dashboards | Issue Tracking",
+      stats: "Issue Tracking Portal",
     },
   ];
 
