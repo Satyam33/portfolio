@@ -49,7 +49,7 @@ export const Hero = () => {
 
           <motion.p variants={item} className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
             Building scalable, high-performance web applications. <br className="hidden md:block" />
-            4.9+ years experience | SDE II @ Nickelfox
+            4.5+ years experience | SDE II @ Nickelfox
           </motion.p>
 
           <motion.div variants={item} className="flex flex-col sm:flex-row items-center justify-center gap-4 border-white/10">
@@ -60,7 +60,7 @@ export const Hero = () => {
               View Projects <ArrowRight size={18} />
             </Link>
             <a
-              href="/Satyam_Limbani_CV.pdf"
+              href="/satyam_resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold transition-colors flex items-center justify-center gap-2 border border-white/10"
@@ -76,7 +76,7 @@ export const Hero = () => {
             <a href="mailto:satyamlimbani2510@gmail.com" className="hover:text-white transition-colors p-2 bg-white/5 rounded-full hover:scale-110 transform">
               <Mail size={24} />
             </a>
-            <a href="https://github.com/satyamlimbani2510" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 bg-white/5 rounded-full hover:scale-110 transform">
+            <a href="https://github.com/Satyam33" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors p-2 bg-white/5 rounded-full hover:scale-110 transform">
               <FaGithub size={24} />
             </a>
           </motion.div>
